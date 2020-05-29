@@ -1,65 +1,97 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - UAI</title>
-    <link href="~/Content/site.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/jquery-2.2.4.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/main.css">
+    <link rel="stylesheet" href="~/Content/skin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/index.js"></script>
 </head>
-<body>
+<body id="wrapper" class="blue">
     <div id="container">
+        <section id="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-7 col-xs-7 top-header-links">
+                        <ul class="contact_links">
+                            <li><i class="fa fa-phone"></i><a href="#">+54 11 0000-0000</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="#">damiancontreras.15@gmail.com</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="#">bontaroberto@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-xs-5 social">
+                        <ul class="social_links">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Cabecera -->
         <header>
-            <a href="/" title="Principal">
-                <img class="logo" src="~/content/image/Logo.png" alt="Logo de la Institución" />
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="/Home/Index">Principal</a> </li>
-                    <li><a href="/Home/Contact">Contacto</a> </li>
-                    <li><a href="/Home/About">Acerca de</a> </li>
-                    <li><a href="/Obras/Index">Catálogo</a> </li>
-                    <li><a href="#">Carrito</a> </li>
-                </ul>
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <h1>UAIart</h1><span>Galeria Virtual</span>
+                            </a>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Inicio</a></li>
+                                <li><a href="features.html">Articulos</a></li>
+                                <li><a href="about.html">Acerca de</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
+                                <li><a href="login.html">Sign In</a></li>
+                                <li><a href="registration.html">Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
+
         <!-- Contenido -->
+
         <section>
             <article>
                 @RenderBody()
             </article>
         </section>
 
-        <!-- Contenido relacionado-->
-        <aside id="pub">
-            <article>
-                <div>
-                    <h3>Menu</h3>
-                    <div>
-                        <ul>
-                            <li><a href="/Ejercicios/ConceptosB1">Conceptos Basicos 1</a> </li>
-                            <li><a href="/Ejercicios/ConceptosB2">Conceptos Basicos 2</a> </li>
-                            <li><a href="/Ejercicios/ConceptosB3">Conceptos Basicos 3</a> </li>
-                            <li><a href="/Ejercicios/Enlaces">Enlaces</a> </li>
-                            <li><a href="/Ejercicios/Listas">Listas</a> </li>
-                            <li><a href="/Ejercicios/Tablas1">Tablas 1</a> </li>
-                            <li><a href="/Ejercicios/Tablas2">Tablas 2</a> </li>
-                            <li><a href="/Ejercicios/Formularios1">Formularios 1</a> </li>
-                            <li><a href="/Ejercicios/Formularios2">Formularios 2</a> </li>
-                            <li><a href="/Ejercicios/FormulariosHTML5">Formularios HTML5</a> </li>
-                        </ul>
+        <!-- Pie de pagina -->
+        <footer id="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                        &copy; @DateTime.Now.Year - Universidad Abierta Interamericana
                     </div>
                 </div>
-            </article>
-        </aside>
-        <!-- Pie de pagina -->
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Universidad Abierta Interamericana</p>
-            <p>Equipo 4</p>
+            </div>
         </footer>
     </div>
-    @RenderSection("scripts", required: false)
 
+    @RenderSection("scripts", required: false)
 </body>
 </html>
