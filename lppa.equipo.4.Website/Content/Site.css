@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: #AA2808;
+    color: #7B0A04;
 }
 
 
@@ -43,7 +43,7 @@ a {
 /************************** layout **************************/
 
 #wrapper {
-    width: 900px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -88,11 +88,11 @@ a {
 
 /**** Menu ****/
 #menu {
-    width: 872px;
+    width: 1200px;
     height: 41px;
     margin: 0 auto;
     padding: 0px 0px 0px 28px;
-    background: url('/content/img/menu.jpg') no-repeat left top;
+    background: url('/content/img/menu.png') no-repeat left top;
 }
 
     #menu ul {
@@ -122,21 +122,25 @@ a {
     }
 
         #menu a:hover, #menu .active a {
-            background: #C11212;
+            background: #7B0A04;
             color: #FFFFFF;
         }
 
 #page {
-    width: 844px;
+    width: 1180px;
     margin: 0 auto;
-    padding: 0px 28px;
+    padding: 0px 20px;
     background: #FFFFFF url('/content/img/bg.jpg') repeat-y left top;
 }
 
 #content {
     float: left;
-    width: 560px;
-    padding-top: 30px;
+    width: 880px;
+    padding-top: 15px;
+}
+.header2 
+{
+    font-size: 26px;
 }
 
 .post {
