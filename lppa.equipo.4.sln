@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.equipo.4", "web.equipo.4\web.equipo.4.csproj", "{FFB1278A-D0EE-4B03-80CD-6EAB25AD2B8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.Website", "web.equipo.4\lppa.equipo.4.Website.csproj", "{FFB1278A-D0EE-4B03-80CD-6EAB25AD2B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.Services", "lppa.equipo.4.Services\lppa.equipo.4.Services.csproj", "{933A40E7-3C84-464A-9F38-C6A6F23C734F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FFB1278A-D0EE-4B03-80CD-6EAB25AD2B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFB1278A-D0EE-4B03-80CD-6EAB25AD2B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB1278A-D0EE-4B03-80CD-6EAB25AD2B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933A40E7-3C84-464A-9F38-C6A6F23C734F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933A40E7-3C84-464A-9F38-C6A6F23C734F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933A40E7-3C84-464A-9F38-C6A6F23C734F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933A40E7-3C84-464A-9F38-C6A6F23C734F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
