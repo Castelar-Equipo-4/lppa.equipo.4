@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.Website", "we
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.Services", "lppa.equipo.4.Services\lppa.equipo.4.Services.csproj", "{933A40E7-3C84-464A-9F38-C6A6F23C734F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.Data", "lppa.equipo.4.Data\lppa.equipo.4.Data.csproj", "{24A733E9-4AFA-4AF2-BEFA-26D6BAB0877C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{933A40E7-3C84-464A-9F38-C6A6F23C734F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{933A40E7-3C84-464A-9F38-C6A6F23C734F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{933A40E7-3C84-464A-9F38-C6A6F23C734F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A733E9-4AFA-4AF2-BEFA-26D6BAB0877C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A733E9-4AFA-4AF2-BEFA-26D6BAB0877C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A733E9-4AFA-4AF2-BEFA-26D6BAB0877C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A733E9-4AFA-4AF2-BEFA-26D6BAB0877C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
