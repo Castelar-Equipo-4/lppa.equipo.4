@@ -6,7 +6,7 @@
 
 body {
     margin: 0px;
-    background: #C0C0C0;
+    background: #7B0A04;
     text-align: justify;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 13px;
@@ -50,7 +50,7 @@ a {
 /* Header */
 #header {
     height: 140px;
-    background: url('/content/img/header.jpg') no-repeat left top;
+    background: url('/content/img/header.png') no-repeat left top;
 }
 
 /**** Logo ****/
