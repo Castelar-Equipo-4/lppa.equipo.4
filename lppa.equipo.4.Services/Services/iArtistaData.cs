@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lppa.equipo._4.Data.Services
+namespace lppa.equipo._4.Services
 {
     public interface IArtistaData
     {
