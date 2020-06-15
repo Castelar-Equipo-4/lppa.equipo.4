@@ -9,9 +9,9 @@ using Fluent.Infrastructure.FluentStartup;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using OdeToFood.WebSite.Models;
+using lppa.equipo._4.Website.Models;
 
-namespace OdeToFood.WebSite.Controllers
+namespace lppa.equipo._4.Website.Controllers
 {
     [Authorize]
     public class AccountController : Controller

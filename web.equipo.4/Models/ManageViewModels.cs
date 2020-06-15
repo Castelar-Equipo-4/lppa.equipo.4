@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace OdeToFood.WebSite.Models
+namespace lppa.equipo._4.Website.Models
 {
     public class IndexViewModel
     {

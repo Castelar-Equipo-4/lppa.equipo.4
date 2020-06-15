@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace OdeToFood.WebSite.Models
+namespace lppa.equipo._4.Website.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
