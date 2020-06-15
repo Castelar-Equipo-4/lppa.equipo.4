@@ -50,10 +50,6 @@
       <Project>{24a733e9-4afa-4af2-befa-26d6bab0877c}</Project>
       <Name>lppa.equipo.4.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\web.equipo.4\lppa.equipo.4.Website.csproj">
-      <Project>{ffb1278a-d0ee-4b03-80cd-6eab25ad2b8f}</Project>
-      <Name>lppa.equipo.4.Website</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
