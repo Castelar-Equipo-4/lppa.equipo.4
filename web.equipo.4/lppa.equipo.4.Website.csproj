@@ -150,12 +150,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\main.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Image\bg.jpg" />
+    <Content Include="Content\Image\header.jpg" />
+    <Content Include="Content\Image\item.jpg" />
+    <Content Include="Content\Image\menu.jpg" />
+    <Content Include="Content\Image\post.gif" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\skin.css" />
+    <Content Include="Content\Site.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Image\Logo.png" />
     <Content Include="readme.txt" />
     <Content Include="Scripts\index.js" />
     <Content Include="Web.config" />
