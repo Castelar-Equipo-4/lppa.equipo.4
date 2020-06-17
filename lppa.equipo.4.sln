@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.Data", "lppa.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.Website", "lppa.equipo.4.Website\lppa.equipo.4.Website.csproj", "{E6E9BE1E-E7BC-404E-94E9-3C5B4D45126B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.BE", "lppa.equipo.4.BE\lppa.equipo.4.BE.csproj", "{8ACCAFBB-EB9B-4AEE-9E32-E021EA0B7D25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.BLL", "lppa.equipo.4.BLL\lppa.equipo.4.BLL.csproj", "{5A12FAAB-835C-4781-9F5E-F361ECDADA31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{E6E9BE1E-E7BC-404E-94E9-3C5B4D45126B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6E9BE1E-E7BC-404E-94E9-3C5B4D45126B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6E9BE1E-E7BC-404E-94E9-3C5B4D45126B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACCAFBB-EB9B-4AEE-9E32-E021EA0B7D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACCAFBB-EB9B-4AEE-9E32-E021EA0B7D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACCAFBB-EB9B-4AEE-9E32-E021EA0B7D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACCAFBB-EB9B-4AEE-9E32-E021EA0B7D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A12FAAB-835C-4781-9F5E-F361ECDADA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A12FAAB-835C-4781-9F5E-F361ECDADA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A12FAAB-835C-4781-9F5E-F361ECDADA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A12FAAB-835C-4781-9F5E-F361ECDADA31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
