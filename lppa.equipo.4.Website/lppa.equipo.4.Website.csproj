@@ -259,6 +259,14 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\lppa.equipo.4.BE\lppa.equipo.4.BE.csproj">
+      <Project>{8accafbb-eb9b-4aee-9e32-e021ea0b7d25}</Project>
+      <Name>lppa.equipo.4.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lppa.equipo.4.BLL\lppa.equipo.4.BLL.csproj">
+      <Project>{5a12faab-835c-4781-9f5e-f361ecdada31}</Project>
+      <Name>lppa.equipo.4.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\lppa.equipo.4.Data\lppa.equipo.4.Data.csproj">
       <Project>{24a733e9-4afa-4af2-befa-26d6bab0877c}</Project>
       <Name>lppa.equipo.4.Data</Name>
