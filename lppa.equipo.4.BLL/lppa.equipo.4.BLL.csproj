@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArtistBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lppa.equipo.4.BE\lppa.equipo.4.BE.csproj">
+      <Project>{8ACCAFBB-EB9B-4AEE-9E32-E021EA0B7D25}</Project>
+      <Name>lppa.equipo.4.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lppa.equipo.4.MPP\lppa.equipo.4.MPP.csproj">
+      <Project>{352F2851-6942-4413-9147-4A1B874E7B9A}</Project>
+      <Name>lppa.equipo.4.MPP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

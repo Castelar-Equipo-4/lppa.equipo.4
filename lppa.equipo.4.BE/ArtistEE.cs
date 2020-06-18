@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lppa.equipo._4.BE
 {
-    public class ArtistEE
+    public class ArtistEE : IdentityEE
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

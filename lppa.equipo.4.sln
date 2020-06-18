@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.BE", "lppa.eq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.BLL", "lppa.equipo.4.BLL\lppa.equipo.4.BLL.csproj", "{5A12FAAB-835C-4781-9F5E-F361ECDADA31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lppa.equipo.4.MPP", "lppa.equipo.4.MPP\lppa.equipo.4.MPP.csproj", "{352F2851-6942-4413-9147-4A1B874E7B9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5A12FAAB-835C-4781-9F5E-F361ECDADA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A12FAAB-835C-4781-9F5E-F361ECDADA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A12FAAB-835C-4781-9F5E-F361ECDADA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352F2851-6942-4413-9147-4A1B874E7B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352F2851-6942-4413-9147-4A1B874E7B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352F2851-6942-4413-9147-4A1B874E7B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352F2851-6942-4413-9147-4A1B874E7B9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
