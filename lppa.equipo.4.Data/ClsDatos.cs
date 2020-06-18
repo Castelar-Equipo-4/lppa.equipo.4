@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,8 +13,8 @@ namespace lppa.equipo._4.Data
 {
     public class ClsDatos
     {
-        private string CadenaC = @"DData Source=DAMIAN-NOTEBOOK;Initial Catalog=edu-spark-art;Integrated Security=True";
-        private SqlConnection Cnn = new SqlConnection(@"Data Source=DAMIAN-NOTEBOOK;Initial Catalog=edu-spark-art;Integrated Security=True");
+        private string CadenaC = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        private SqlConnection Cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
         private SqlTransaction Tranx;
 
         private SqlCommand Cmd;
