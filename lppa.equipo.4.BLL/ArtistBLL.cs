@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace lppa.equipo._4.BLL
 {
-    class ArtistBLL
+   public class ArtistBLL
     {
         public List<ArtistEE> ListarArtist()
         {

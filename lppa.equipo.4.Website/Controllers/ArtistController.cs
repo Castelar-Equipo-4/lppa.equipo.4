@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lppa.equipo._4.BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,12 @@ namespace lppa.equipo._4.Website.Controllers
 {
     public class ArtistController : Controller
     {
+        private ArtistBLL db = new ArtistBLL();
         // GET: Artist
         public ActionResult Index()
         {
-            return View();
+            var list = db.ListarArtist();
+            return View(list);
         }
 
         // GET: Artist/Details/5
