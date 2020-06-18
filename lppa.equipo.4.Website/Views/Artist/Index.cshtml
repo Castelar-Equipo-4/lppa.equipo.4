@@ -1,9 +1,17 @@
-﻿
+﻿@model IEnumerable<lppa.equipo._4.BE.ArtistEE>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Artistas</h2>
+@Enumerable.Count(Model)
+@foreach (var item in Model)
+{
+    <span>@item.FirstName</span>
+    <br>
+    <span>@item.LastName</span>
+    <br>
+}
 <div>
     <table>
         <tr>
@@ -48,29 +56,31 @@
 
     <script>
 
-            
+
 
         $("#btnSave").click(function () {
 
-            
+            @{
+
+            }
 
         });
 
         $("#btnUpDate").click(function () {
 
-            
+
 
         });
 
         $("#btnDelete").click(function () {
 
-            
+
 
         });
 
         $("#btnToList").click(function () {
 
-          
+
 
         });
 
