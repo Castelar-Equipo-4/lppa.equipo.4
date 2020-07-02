@@ -39,7 +39,7 @@ namespace lppa.equipo._4.Data.Model
                 return this.FirstName + " " + this.LastName;
             }
         }
-        public virtual ICollection<Product> Product { get; set; }
+        public virtual ICollection<Obras> Obra { get; set; }
 
 
     }

@@ -25,7 +25,7 @@ namespace lppa.equipo._4.Data.Services
 
         public virtual DbSet<Artist> Artist { get; set; }
 
-        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Obras> Obra { get; set; }
 
         public virtual DbSet<Error> Error { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace lppa.equipo._4.Data.Model
 {
-    public class Product : IdentityBase
+    public class Obras : IdentityBase
     {
         public string Title { get; set; }
         public string Description { get; set; }
