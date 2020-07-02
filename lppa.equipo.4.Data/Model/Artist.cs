@@ -11,7 +11,7 @@ namespace lppa.equipo._4.Data.Model
 {
     public class Artist : IdentityBase
     {
-
+//
         [Required]
         [DisplayName("Nombre")]
         public string FirstName { get; set; }
