@@ -9,7 +9,7 @@ namespace lppa.equipo._4.Services
 {
     public interface IArtistaData
     {
-        IEnumerable<Artista> GetAll();
+        IEnumerable<Artist> GetAll();
     }
 
 }

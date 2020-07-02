@@ -13,7 +13,7 @@ namespace lppa.equipo._4.Website.Controllers
 
         public ObrasController()
         {
-            db = new InMemoryArtistaData();
+            //db = new InMemoryArtisatData();
         }
         public ActionResult Index()
         {
