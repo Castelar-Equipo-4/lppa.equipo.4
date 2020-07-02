@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="ArtistMPP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolesMPP.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lppa.equipo.4.BE\lppa.equipo.4.BE.csproj">

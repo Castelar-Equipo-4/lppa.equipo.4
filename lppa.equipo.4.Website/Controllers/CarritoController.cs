@@ -1,26 +1,24 @@
 ﻿using Microsoft.AspNet.Identity;
+using lppa.equipo._4.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data;
 using System.Web.Mvc;
-using lppa.equipo._4.Data.Services;
+using lppa.equipo._4.Website.Models;
 
 namespace lppa.equipo._4.Website.Controllers
 {
     public class CarritoController : Controller
     {
+        //[Authorize]
         // GET: Carrito
         public ActionResult Index()
         {
             if (User.Identity.GetUserName() != "")
             {
-                DataSet DS = new DataSet();
-                DS = IDataService
-                User.Identity.GetUserId();
-               if ( )
-                return View();
+                return RedirectToAction("Index_Admin", "Home");
             }
             else
             {

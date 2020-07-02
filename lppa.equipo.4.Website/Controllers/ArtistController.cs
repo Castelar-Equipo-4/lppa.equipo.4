@@ -11,7 +11,8 @@ using System.Web.Mvc;
 
 namespace lppa.equipo._4.Website.Controllers
 {
-        public class ArtistController : BaseController
+    [Authorize]
+    public class ArtistController : BaseController
     {
         private BaseDataService<Artist> db;
         public ArtistController()

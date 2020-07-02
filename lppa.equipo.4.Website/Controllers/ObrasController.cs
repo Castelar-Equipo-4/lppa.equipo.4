@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace lppa.equipo._4.Website.Controllers
 {
+    [Authorize]
     public class ObrasController : BaseController
     {
         private BaseDataService<Obras> db;
