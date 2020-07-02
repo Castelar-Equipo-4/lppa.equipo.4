@@ -12,4 +12,5 @@ namespace lppa.equipo._4.Services
         IEnumerable<Artist> GetAll();
     }
 
+
 }

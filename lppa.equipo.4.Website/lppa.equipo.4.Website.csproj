@@ -256,11 +256,11 @@
     <Content Include="Views\Artist\Edit.cshtml" />
     <Content Include="Views\Shared\_Layout_Admin.cshtml" />
     <Content Include="Views\Home\Index_Admin.cshtml" />
+    <Content Include="Views\Carrito\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
-    <Folder Include="Views\Carrito\" />
     <Folder Include="Views\Image\" />
   </ItemGroup>
   <ItemGroup>
@@ -288,6 +288,10 @@
     <ProjectReference Include="..\lppa.equipo.4.Data\lppa.equipo.4.Data.csproj">
       <Project>{24a733e9-4afa-4af2-befa-26d6bab0877c}</Project>
       <Name>lppa.equipo.4.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lppa.equipo.4.MPP\lppa.equipo.4.MPP.csproj">
+      <Project>{352f2851-6942-4413-9147-4a1b874e7b9a}</Project>
+      <Name>lppa.equipo.4.MPP</Name>
     </ProjectReference>
     <ProjectReference Include="..\lppa.equipo.4.Services\lppa.equipo.4.Services.csproj">
       <Project>{933a40e7-3c84-464a-9f38-c6a6f23c734f}</Project>

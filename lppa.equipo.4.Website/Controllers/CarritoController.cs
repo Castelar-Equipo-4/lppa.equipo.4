@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 using System.Web.Mvc;
+using lppa.equipo._4.Data.Services;
 
 namespace lppa.equipo._4.Website.Controllers
 {
@@ -12,13 +14,17 @@ namespace lppa.equipo._4.Website.Controllers
         // GET: Carrito
         public ActionResult Index()
         {
-            if (User.Identity.GetUserName() != null)
+            if (User.Identity.GetUserName() != "")
             {
-                return RedirectToAction("Login", "Account");
+                DataSet DS = new DataSet();
+                DS = IDataService
+                User.Identity.GetUserId();
+               if ( )
+                return View();
             }
             else
             {
-                return View();
+                return RedirectToAction("Login", "Account");
             }
                   
 
