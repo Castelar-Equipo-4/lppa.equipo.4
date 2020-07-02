@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="ClsDatos.cs" />
     <Compile Include="Model\Artist.cs" />
-    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Obras.cs" />
     <Compile Include="Model\Error.cs" />
     <Compile Include="Model\Identity.cs" />
     <Compile Include="Model\IdentityBase.cs" />
@@ -64,6 +64,7 @@
     <Compile Include="Services\IDataServices.cs" />
     <Compile Include="Services\iArtistaData.cs" />
     <Compile Include="Services\InMemoryArtistaData.cs" />
+    <Compile Include="Services\IObrasData.cs" />
     <Compile Include="Services\RestoDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
