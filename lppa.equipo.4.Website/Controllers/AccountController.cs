@@ -57,6 +57,7 @@ namespace lppa.equipo._4.Website.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
