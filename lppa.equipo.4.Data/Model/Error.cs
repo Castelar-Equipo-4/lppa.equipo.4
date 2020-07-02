@@ -9,8 +9,8 @@ namespace lppa.equipo._4.Data.Model
             this.ErrorDate = DateTime.Now;
             this.ChangedOn = DateTime.Now;
             this.CreatedOn = DateTime.Now;
-            this.CreatedBy = "monitor@artshop.com";
-            this.ChangedBy = "monitor@artshop.com";
+            this.CreatedBy = "admin@artarg.com.ar";
+            this.ChangedBy = "admin@artarg.com.ar";
         }
 
 
