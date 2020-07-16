@@ -20,13 +20,13 @@
             <ul>
                 <li class="active"><a href="/">Home</a></li>
 
-                @if (Request.IsAuthenticated && User.IsInRole("Vendedor"))
+                @if (Request.IsAuthenticated && (User.IsInRole("Vendedor") || User.IsInRole("Administrador")))
                 {
                     <li><a href="/Artist/">Artista</a></li>
                 }
 
                 <li><a href="/Obras/">Obras</a></li>
-                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                @if (Request.IsAuthenticated && User.IsInRole("Administrador"))
                 {
                     <li><a href="/Perfiles/">Perfiles</a></li>
                 }

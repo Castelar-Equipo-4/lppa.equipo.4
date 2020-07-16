@@ -24,28 +24,27 @@
 
         <th></th>
     </tr>
-
     @foreach (var item in Model)
     {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.Carrito.Cookie)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.ObrasId)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Price)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Quantity)
-    </td>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Carrito.Cookie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObrasId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
 
-    <td>
+        <td>
 
-        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-    </td>
-</tr>}
-
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+    }
 </table>
 

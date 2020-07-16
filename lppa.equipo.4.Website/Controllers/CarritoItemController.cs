@@ -18,7 +18,16 @@ namespace lppa.equipo._4.Website.Controllers
         public ActionResult Index()
         {
             var carritoItem = db.CarritoItem.Include(c => c.Carrito);
-            return View(carritoItem.ToList());
+            try
+            {
+                return View(carritoItem.ToList());
+            }
+            catch (Exception)
+            {
+                return View();
+                throw;
+            }  
+            //return carritoItem.Count() == 0 ? View() : View(carritoItem.ToList());
         }
 
         // GET: CarritoItem/Details/5
