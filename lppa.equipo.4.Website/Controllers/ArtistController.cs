@@ -93,5 +93,37 @@ namespace lppa.equipo._4.Website.Controllers
             }
 
         }
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            var artist = db.GetById(id.Value);
+            if (artist == null)
+            {
+                Logger.Instance.LogException(new Exception("Artist HttpNotFound"));
+                return HttpNotFound();
+            }
+            return View(artist);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(Artist artist)
+        {
+            try
+            {
+                db.Delete(artist);
+                return RedirectToAction("Index");
+
+            }
+            catch (Exception ex)
+            {
+                Logger.Instance.LogException(ex);
+                ViewBag.MessageDanger = ex.Message;
+                return View(artist);
+            }
+        }
     }
 }

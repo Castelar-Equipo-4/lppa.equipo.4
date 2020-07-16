@@ -29,7 +29,11 @@ namespace lppa.equipo._4.Data.Services
 
         public virtual DbSet<Error> Error { get; set; }
 
-      //  public virtual DbSet<Order> Carrito { get; set; }
+        public virtual DbSet<Carrito> Carrito { get; set; }
+
+        public virtual DbSet<CarritoItem> CarritoItem { get; set; }
+
+        //  public virtual DbSet<Order> Carrito { get; set; }
 
     }
 }

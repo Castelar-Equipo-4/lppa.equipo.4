@@ -171,10 +171,12 @@
     <Compile Include="Controllers\ArtistController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CarritoController.cs" />
+    <Compile Include="Controllers\CarritoItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ObrasController.cs" />
+    <Compile Include="Controllers\PerfilesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -254,9 +256,15 @@
     <Content Include="Views\Artist\Index.cshtml" />
     <Content Include="Views\Artist\Create.cshtml" />
     <Content Include="Views\Artist\Edit.cshtml" />
-    <Content Include="Views\Shared\_Layout_Admin.cshtml" />
-    <Content Include="Views\Home\Index_Admin.cshtml" />
     <Content Include="Views\Carrito\Index.cshtml" />
+    <Content Include="Views\Obras\Delete.cshtml" />
+    <Content Include="Views\Artist\Delete.cshtml" />
+    <Content Include="Views\CarritoItem\Index.cshtml" />
+    <Content Include="Views\CarritoItem\Create.cshtml" />
+    <Content Include="Views\CarritoItem\Edit.cshtml" />
+    <Content Include="Views\CarritoItem\Delete.cshtml" />
+    <Content Include="Views\CarritoItem\Details.cshtml" />
+    <Content Include="Views\Perfiles\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

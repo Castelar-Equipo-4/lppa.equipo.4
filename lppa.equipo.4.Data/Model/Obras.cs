@@ -1,4 +1,5 @@
 ﻿
+
 namespace lppa.equipo._4.Data.Model
 {
     public class Obras : IdentityBase

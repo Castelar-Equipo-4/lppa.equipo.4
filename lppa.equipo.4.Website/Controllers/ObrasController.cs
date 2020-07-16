@@ -20,7 +20,7 @@ namespace lppa.equipo._4.Website.Controllers
             db = new BaseDataService<Obras>();
         }
 
-  
+
         public ActionResult Index()
         {
             var model = db.Get();
@@ -84,6 +84,38 @@ namespace lppa.equipo._4.Website.Controllers
             }
 
         }
-    
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            var obras = db.GetById(id.Value);
+            if (obras == null)
+            {
+                Logger.Instance.LogException(new Exception("Obras HttpNotFound"));
+                return HttpNotFound();
+            }
+            return View(obras);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(Obras obras)
+        {
+            try
+            {
+                db.Delete(obras);
+                return RedirectToAction("Index");
+
+            }
+            catch (Exception ex)
+            {
+                Logger.Instance.LogException(ex);
+                ViewBag.MessageDanger = ex.Message;
+                return View(obras);
+            }
+
+        }
     }
 }

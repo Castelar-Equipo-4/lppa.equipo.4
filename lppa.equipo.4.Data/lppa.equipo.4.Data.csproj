@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="ClsDatos.cs" />
     <Compile Include="Model\Artist.cs" />
+    <Compile Include="Model\Carrito.cs" />
+    <Compile Include="Model\CarritoItem.cs" />
     <Compile Include="Model\Obras.cs" />
     <Compile Include="Model\Error.cs" />
     <Compile Include="Model\Identity.cs" />
