@@ -71,7 +71,7 @@
                 @Html.DisplayFor(modelItem => item.AvgStars)
             </td>
             <td>
-                @Html.ActionLink("Agregar", "Add", new { id = item.Id })  
+                @Html.ActionLink("Agregar", "Buy", new { id = item.Id })  
                 @if (Request.IsAuthenticated && (User.IsInRole("Vendedor") || User.IsInRole("Administrador")))
                 {
                     <b>|</b>

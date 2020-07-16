@@ -14,7 +14,7 @@ namespace lppa.equipo._4.Data.Model
         }
 
         public string Cookie { get; set; }
-        public System.DateTime CarritoDate { get; set; }
+        public System.DateTime CartDate { get; set; }
         public int ItemCount { get; set; }
 
 

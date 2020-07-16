@@ -26,7 +26,8 @@ namespace lppa.equipo._4.Website.Controllers
             {
                 return View();
                 throw;
-            }  
+            }
+  
             //return carritoItem.Count() == 0 ? View() : View(carritoItem.ToList());
         }
 
@@ -57,7 +58,7 @@ namespace lppa.equipo._4.Website.Controllers
         // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CarritoId,ObrasId,Price,Quantity,CreatedOn,CreatedBy,ChangedOn,ChangedBy")] CarritoItem carritoItem)
+        public ActionResult Create([Bind(Include = "Id,ProductId,ObrasId,Price,Quantity,CreatedOn,CreatedBy,ChangedOn,ChangedBy")] CarritoItem carritoItem)
         {
             if (ModelState.IsValid)
             {
@@ -66,7 +67,7 @@ namespace lppa.equipo._4.Website.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CarritoId = new SelectList(db.Carrito, "Id", "Cookie", carritoItem.CarritoId);
+            ViewBag.CarritoId = new SelectList(db.Carrito, "Id", "Cookie", carritoItem.ProductId);
             return View(carritoItem);
         }
 
@@ -82,7 +83,7 @@ namespace lppa.equipo._4.Website.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CarritoId = new SelectList(db.Carrito, "Id", "Cookie", carritoItem.CarritoId);
+            ViewBag.CarritoId = new SelectList(db.Carrito, "Id", "Cookie", carritoItem.ProductId);
             return View(carritoItem);
         }
 
@@ -99,7 +100,7 @@ namespace lppa.equipo._4.Website.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CarritoId = new SelectList(db.Carrito, "Id", "Cookie", carritoItem.CarritoId);
+            ViewBag.CarritoId = new SelectList(db.Carrito, "Id", "Cookie", carritoItem.ProductId);
             return View(carritoItem);
         }
 

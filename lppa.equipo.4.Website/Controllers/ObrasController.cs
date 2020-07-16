@@ -14,6 +14,7 @@ namespace lppa.equipo._4.Website.Controllers
     [Authorize]
     public class ObrasController : BaseController
     {
+        private readonly RestoDbContext dba = new RestoDbContext();
         private BaseDataService<Obras> db;
         public ObrasController()
         {
@@ -47,7 +48,32 @@ namespace lppa.equipo._4.Website.Controllers
             }
 
         }
+        public ActionResult Buy(int id)
+        {
 
+            var cookie = HelperCookie.GetFromCookie("shop-art", "shop-art-key");
+
+            Carrito cart = new Carrito
+            {
+                CartDate = DateTime.Now,
+                Cookie = cookie,
+                ItemCount = 1,
+            };
+            this.CheckAuditPattern(cart, true);
+
+            CarritoItem item = new CarritoItem
+            {
+                Price = 100,
+                ProductId = id,
+                Quantity = 1
+            };
+            this.CheckAuditPattern(item, true);
+            cart.CarritoItem = new List<CarritoItem>() { item };
+            
+            dba.Carrito.Add(cart);
+            dba.SaveChanges();
+            return RedirectToAction("Index", "CarritoItem");
+        }
         public ActionResult Edit(int? id)
         {
             if (id == null)

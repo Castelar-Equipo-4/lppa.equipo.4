@@ -8,11 +8,10 @@ namespace lppa.equipo._4.Data.Model
 {
     public class CarritoItem : IdentityBase
     {
-        public int CarritoId { get; set; }
-        public int ObrasId { get; set; }
+        public int CartId { get; set; }
+        public int ProductId { get; set; }
         public double Price { get; set; }
         public int Quantity { get; set; }
-
 
         public virtual Carrito Carrito { get; set; }
     }
